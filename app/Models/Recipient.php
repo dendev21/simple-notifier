@@ -29,4 +29,14 @@ class Recipient
     {
         return $this->getEmail();
     }
+
+    public function routeNotificationForVonage(): string
+    {
+        return $this->getPhone();
+    }
+
+    public function routeNotificationForTwilio(): string
+    {
+        return $this->getPhone();
+    }
 }

@@ -38,5 +38,7 @@ class NotifyCommand extends Command implements Isolatable
             ->setMessage($validated['message'])
             ->setRecipient($recipient)
             ->send();
+
+        $this->output->writeln('The message has been sent.');
     }
 }
